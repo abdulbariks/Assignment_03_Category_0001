@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!-- fontawesome  -->
+    <script
+      src="https://kit.fontawesome.com/412c671735.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- DaisyUl CDN  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -36,7 +41,58 @@
       };
     </script>
   </head>
-  <body class="">
-    <h1 class="font-ADLaM bg-primary-bg">Browse Pets</h1>
+  <body class="font-sora">
+    <!-- header section start -->
+    <header>
+      <!-- nav section start  -->
+      <nav class="bg-primary-bg">
+        <div class="navbar px-5 lg:px-0 lg:w-4/5 mx-auto">
+          <div class="navbar-start">
+            <img src="./c1-assets/logo-header.png" alt="" />
+            <h1 class="hidden lg:flex ml-2">
+              Browse <span class="text-secondary-bg">4</span>Pets
+            </h1>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="hidden lg:flex items-center gap-3">
+              <a href=""><i class="fa-solid fa-bell"></i></a>
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <button
+                class="border-solid border-2 border-indigo-200 rounded py-2 px-4"
+                type="button"
+              >
+                Login
+              </button>
+              <button class="rounded bg-secondary-bg py-2 px-6" type="button">
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="lg:hidden" />
+      </nav>
+    </header>
+    <!-- main section start    -->
+    <main></main>
   </body>
 </html>
